@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fondos */
+  --color-ink-950: #070A0E;
+  --color-ink-900: #0C1116;
+  --color-ink-850: #10161D;
+  --color-ink-800: #151D26;
+  --color-ink-700: #232E3B;
+  --color-line: #202B37;
+
+  /* Texto */
+  --color-mist-50: #F5F8FB;
+  --color-mist-200: #D3DCE5;
+  --color-mist-400: #93A1B0;
+  --color-mist-600: #647383;
+
+  /* Acento */
+  --color-ember-300: #FFB574;
+  --color-ember-400: #FF9540;
+  --color-ember-500: #FF7A18;
+  --color-ember-600: #E35D02;
+}
+
+@theme inline {
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink-950);
+  color: var(--color-mist-200);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-ember-500);
+  color: #0A0D11;
+}
+
+/* Rejilla sutil de fondo para las secciones oscuras */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
