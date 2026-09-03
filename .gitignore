@@ -1,0 +1,47 @@
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# Compilaciones y salidas
+dist/
+build/
+.next/
+out/
+.vite/
+.turbo/
+
+# Variables de entorno (NUNCA subir claves)
+.env
+.env.local
+.env.*.local
+
+# Registros y cachés
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# OneDrive
+*.tmp
+~$*
+
+# Documentacion interna (no publicar en repositorio publico)
+*.docx
+*.xlsx
+*.pdf
